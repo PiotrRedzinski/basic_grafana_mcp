@@ -1,5 +1,6 @@
 Command to start docker (may depend on your grafana server configuration):
-	sudo docker run -d \
+
+sudo docker run -d \
   --name grafana-mcp-integration \
   -p 9001:3000 \
   -e GRAFANA_URL=https://<YOUR_GRAFANA_IP_ADDRESS> \
