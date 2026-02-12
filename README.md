@@ -1,7 +1,7 @@
 ##this is docker with small picture generator for anythingllm testing - download docker file from:
 [https://drive.google.com/file/d/1lUEAYyCwRgGWqOpryeYJYHt9XLsROSGW/view?usp=sharing]
 
-there is a special tool "generate_pictest" that doesn't not require interaction with grafana, it returns base64 string for small picture.
+there is a special tool "generate_pictest" that doesn't require interaction with grafana, it returns base64 string for small picture.
 
 ##Command to start docker (may depend on your grafana server configuration):
 
