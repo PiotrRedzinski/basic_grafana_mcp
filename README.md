@@ -1,0 +1,24 @@
+Command to start docker (may depend on your grafana server configuration):
+	sudo docker run -d \
+  --name grafana-mcp-integration \
+  -p 9001:3000 \
+  -e GRAFANA_URL=https://<YOUR_GRAFANA_IP_ADDRESS> \
+  -e GRAFANA_TOKEN=<YOUR_GRAFANA_TOKEN> \
+  -e GRAFANA_VERIFY_SSL=false \
+  -e RENDER_TIMEOUT_MS=120000 \
+  -e MCP_REQUEST_TIMEOUT_MS=180000 \
+  -e LOG_LEVEL=debug \
+  grafana-mcp-integration:latest
+
+configuration of mcp for anythingllm
+  {
+    "mcpServers":  {
+      "grafana": {
+        "url":"http://<YOUR_SERVER_HOSTING_MCP_IP_ADDRESS>:9001/sse",
+        "type":"sse"
+      }
+    }
+  }
+
+  query for anythingllm (may depent on your LLM)
+  @agent grafana image use generate_pictest
