@@ -1,3 +1,6 @@
+##this is docker with small picture generator for anythingllm testing - download docker file from:
+[https://drive.google.com/file/d/1lUEAYyCwRgGWqOpryeYJYHt9XLsROSGW/view?usp=sharing]
+
 ##Command to start docker (may depend on your grafana server configuration):
 
 sudo docker run -d \
