@@ -3,6 +3,9 @@
 
 there is a special tool "generate_pictest" that doesn't require interaction with grafana, it returns base64 string for small picture.
 
+##after downloading load docker:
+docker load < grafana-mcp-integration.tar
+
 ##Command to start docker (may depend on your grafana server configuration):
 
 sudo docker run -d \
