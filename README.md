@@ -1,4 +1,4 @@
-Command to start docker (may depend on your grafana server configuration):
+##Command to start docker (may depend on your grafana server configuration):
 
 sudo docker run -d \
   --name grafana-mcp-integration \
@@ -11,7 +11,7 @@ sudo docker run -d \
   -e LOG_LEVEL=debug \
   grafana-mcp-integration:latest
 
-configuration of mcp for anythingllm
+##configuration of mcp for anythingllm
 
 {
     "mcpServers":  {
@@ -22,6 +22,6 @@ configuration of mcp for anythingllm
     }
   }
 
-  query for anythingllm (may depent on your LLM):
+##query for anythingllm (may depent on your LLM):
   
   @agent grafana image use generate_pictest
