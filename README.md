@@ -12,7 +12,8 @@ sudo docker run -d \
   grafana-mcp-integration:latest
 
 configuration of mcp for anythingllm
-  {
+
+{
     "mcpServers":  {
       "grafana": {
         "url":"http://<YOUR_SERVER_HOSTING_MCP_IP_ADDRESS>:9001/sse",
@@ -21,5 +22,6 @@ configuration of mcp for anythingllm
     }
   }
 
-  query for anythingllm (may depent on your LLM)
+  query for anythingllm (may depent on your LLM):
+  
   @agent grafana image use generate_pictest
